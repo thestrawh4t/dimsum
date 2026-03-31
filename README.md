@@ -3,8 +3,19 @@
 Find embedding models by output dimensionality without downloading weights.
 
 ## Install
+
+### pipx (recommended)
 ```bash
 pipx install git+https://github.com/thestrawh4t/dimsum.git
+```
+
+### pip / venv
+```bash
+git clone https://github.com/thestrawh4t/dimsum.git
+cd dimsum
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -19,14 +30,6 @@ dimsum --dims 768 --limit 50
 |------|---------|-------------|
 | `--dims` | 384 | Target embedding dimensionality |
 | `--limit` | None | Max number of models to check |
-
-## Manual Install
-```bash
-git clone https://github.com/thestrawh4t/dimsum.git
-cd dimsum
-pip install -r requirements.txt
-python dimsum.py --dims 384
-```
 
 ## How it works
 
