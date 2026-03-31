@@ -1,0 +1,16 @@
+[project]
+name = "dimsum"
+version = "0.1.0"
+description = "Find embedding models by output dimensionality without downloading weights"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "huggingface_hub"
+]
+
+[project.scripts]
+dimsum = "dimsum:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
